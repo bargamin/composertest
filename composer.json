@@ -1,0 +1,37 @@
+{
+  "name": "ovm/doctrine",
+  "type": "project",
+  "description": "Bundle for Doctrine",
+  "authors": [
+    { "name": "Maksim Bargamin", "email": "maximb@migfin.com", "role": "developer" }
+  ],
+  "license": "proprietary",
+  "config": {
+    "vendor-dir": "lib"
+  },
+  "require": {
+    "php": "^5.6",
+    "sylphid/config":           "^1.0",
+    "sylphid/log":              "^1.0",
+    "doctrine/orm":             "*"
+  },
+  "require-dev": {
+    "apigen/apigen":               "^4.1",
+    "phpunit/phpunit":             "^5.4",
+    "ext-xdebug":                  "*",
+    "squizlabs/php_codesniffer":   "2.*",
+    "sensiolabs/security-checker": "*",
+    "phpmd/phpmd":                 "@stable",
+    "sebastian/phpcpd":            "*"
+  },
+  "bin": ["bin/ovmdoctrine", "bin/ovmdoctrine.php"],
+  "autoload": {
+    "psr-4": { "OVM\\Doctrine\\" : "src" }
+  },
+  "autoload-dev": {
+    "psr-4": { "OVM\\Doctrine\\Test\\": "test" }
+  },
+  "repositories": [
+    { "type": "composer", "url": "https://satis.office.dev" }
+  ]
+}
