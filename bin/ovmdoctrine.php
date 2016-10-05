@@ -13,8 +13,8 @@ foreach ($autoloadFiles as $autoloadFile) {
 }
 
 $directories = array(getcwd(), getcwd() . DIRECTORY_SEPARATOR . 'config',
-    getcwd() . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR . 'OVM' . DIRECTORY_SEPARATOR   . 'Doctrine',
-    getcwd() . DIRECTORY_SEPARATOR . 'bundle' . DIRECTORY_SEPARATOR . 'OVM' . DIRECTORY_SEPARATOR   . 'Doctrine',);
+    getcwd() . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR . 'ovm' . DIRECTORY_SEPARATOR   . 'doctrine'
+);
 
 $configFile = null;
 foreach ($directories as $directory) {
