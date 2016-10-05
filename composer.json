@@ -1,6 +1,5 @@
 {
   "name": "ovm/doctrine",
-  "type": "project",
   "description": "Bundle for Doctrine",
   "authors": [
     { "name": "Maksim Bargamin", "email": "maximb@migfin.com", "role": "developer" }
