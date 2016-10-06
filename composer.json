@@ -25,10 +25,10 @@
   },
   "bin": ["bin/ovmdoctrine", "bin/ovmdoctrine.php"],
   "autoload": {
-    "psr-4": { "OVM\\Doctrine\\" : "src" }
+    "psr-4": { "OVM\\Doctrine\\" : "src/" }
   },
   "autoload-dev": {
-    "psr-4": { "OVM\\Doctrine\\Test\\": "test" }
+    "psr-4": { "OVM\\Doctrine\\Test\\": "test/" }
   },
   "repositories": [
     { "type": "composer", "url": "https://satis.office.dev" }
