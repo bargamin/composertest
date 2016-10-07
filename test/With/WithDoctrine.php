@@ -12,5 +12,5 @@ use OVM\Doctrine\Doctrine;
 
 class WithDoctrine
 {
-    use OVM\Doctrine\Doctrine;
+    use Doctrine;
 }
