@@ -32,5 +32,8 @@
   },
   "repositories": [
     { "type": "composer", "url": "https://satis.office.dev" }
-  ]
+  ],
+  "scripts": {
+    "post-install-cmd": ["cp -n lib/opt/doctrine/blank/Doctrine.php conf/Doctrine.php"]
+  }
 }
