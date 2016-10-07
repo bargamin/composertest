@@ -34,6 +34,8 @@
     { "type": "composer", "url": "https://satis.office.dev" }
   ],
   "scripts": {
-    "post-install-cmd": ["cp -n lib/opt/doctrine/blank/Doctrine.php conf/Doctrine.php"]
+    "post-install-cmd": ["cp -n lib/opt/doctrine/blank/doctrine.php conf/doctrine.php"],
+    "post-update-cmd": ["cp -n lib/opt/doctrine/blank/doctrine.php conf/doctrine.php",
+    "php -r \"echo file_exists('lib/opt/doctrine/blank/doctrine.php');\""]
   }
 }
