@@ -2,12 +2,12 @@
 
 namespace OVM\Doctrine\Test;
 
-use OVM\Doctrine\Test\With\With_Doctrine;
+use OVM\Doctrine\Test\With;
 
 class DoctrineTest extends \PHPUnit_Framework_TestCase
 {
     public function testGetingEntityManager() {
-        $em = (new With_Doctrine()) -> getEntityManager();
-        $this->assertInstanceOf('EntityManagerInterface');
+        $em = (new With\WithDoctrine()) -> getEntityManager();
+        $this->assertInstanceOf('Doctrine\ORM\EntityManager', $em);
     }
 }

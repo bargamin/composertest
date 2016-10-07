@@ -8,10 +8,9 @@
 
 namespace OVM\Doctrine\Test\With;
 
-echo 555555;
 use OVM\Doctrine\Doctrine;
 
-class With_Doctrine
+class WithDoctrine
 {
     use OVM\Doctrine\Doctrine;
 }
