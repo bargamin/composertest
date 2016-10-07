@@ -25,10 +25,7 @@
   },
   "bin": ["bin/ovmdoctrine", "bin/ovmdoctrine.php"],
   "autoload": {
-    "psr-4": { 
-	"OVM\\Doctrine\\" : "src/",
-	"OVM\\Doctrine\\Test\\": "test/"    	
-    }
+    "psr-4": { "OVM\\Doctrine\\" : "src/" }
   },
   "autoload-dev": {
     "psr-4": { "OVM\\Doctrine\\Test\\": "test/" }
